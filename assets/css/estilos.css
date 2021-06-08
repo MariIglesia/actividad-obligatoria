@@ -1,0 +1,260 @@
+/*
+---------------------------------------------
+Índice
+------------------------------------------------
+1. Typography
+2. Main Nav
+3. Home
+4. About
+5. Work
+6. Single Work
+7. Pricing
+8. Contact
+--------------------------------------------- */
+
+body {font-family: 'Roboto', sans-serif !important;}
+/* Typography */
+p, a {font-weight: 400;}
+.h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+.h4{
+  color: rgb(197, 142, 70);
+}
+p, ul{
+  font-weight: 300;
+}
+.typo-space-line::after,
+.typo-space-line-center::after {
+  content: "";
+  width: 150px;
+  display:block;
+  position: absolute;
+  border-bottom: 5px solid rgb(255 246 235);
+  padding-top: .5em;
+}
+.typo-space-line-center::after {
+  left: 50%;
+  margin-left: -75px;
+}
+/* Main Nav */
+#main_nav .nav-item .nav-link:hover {
+  background-color: rgb(197, 163, 117)!important;
+  color: white !important;
+}
+.nav-link{
+  border-radius: 5px;
+}
+.navbar-toggler-icon{
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/* Home */
+.bg-img1{
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.5)), url('./../img/index-bg.jpg');
+}
+.bg-img2{
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.5)), url('./../img/index-bg2.jpg');
+}
+.bg-img3{
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.5)), url('./../img/index-bg3.jpg');
+}
+
+.bg-img1, .bg-img2, .bg-img3{
+  background-position: center center;
+  background-size: cover;
+}
+
+#index_banner .carousel-item, .carousel-inner, .carousel-img {
+  height: 35em;
+}
+.carousel-caption{
+  text-align: left !important;
+  top:25%;
+}
+#index_banner .carousel-control-prev i,
+#index_banner .carousel-control-next i {
+  color: rgb(255 246 235) !important;
+  text-decoration: none;
+  font-size: 3em;
+}
+
+#index_banner .carousel-indicators li,
+#index_banner .carousel-indicators.active {
+  background-color: rgb(255 246 235) !important;
+}
+
+.nav a.active{
+  background-color: rgb(197, 163, 117);
+  color: white !important;
+}
+.nav li.filter-btn a{
+  color: grey;
+}
+.service-wrapper .service-footer {
+  max-width: 720px;
+}
+.service-work.card {
+  border-radius: 5px !important;
+  cursor: pointer;
+}
+.service-work .service-work-vertical {
+	background: rgba(0, 0, 0, 0.438);
+  transition: .5s;
+}
+.service-work .service-work-vertical:hover {
+  background-position: 0% 0%;
+  background: rgba(0, 0, 0, 0);
+}
+.service-work .service-work-vertical:hover * {
+  opacity: 0;
+  transition: 1s;
+  transform: scale(1.2);
+}
+.service-work img{
+  transition: 1s;
+}
+.service-work:hover img{
+  transform: scale(1.2);
+}
+.service-work-content span{
+  color: white;
+  font-size: 20px;
+}
+.size-delivery{
+  width: 55%;
+}
+.recent-work.card{
+  border-radius: 5px !important;
+}
+.recent-work .recent-work-vertical{
+	background: rgba(0, 0, 0, 0.5);
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover {
+  background-position: 0% 0%;
+  transition: .5s;
+}
+.recent-work .recent-work-vertical:hover{
+  transform: scale(1.4);
+  opacity: 0;
+}
+.recent-work .recent-work-vertical:hover * {
+  background: rgba(0, 0, 0, 0);
+}
+.recent-work:hover img{
+  transform: scale(1.1);
+  transition: .5s;
+}
+/* About */
+#work_banner {
+  background-image: url('./../img/product-bg1.jpg');
+  background-position: center 40%;
+  background-size: cover;
+}
+.our-work img{
+  transition: .5s;
+}
+.our-work:hover img{
+  opacity: 0.4;
+}
+.color-toolbar, .submit-btn, .contact-btn{
+  background-color: rgb(196, 156, 100);
+}
+.about-bg-img{
+  background-image: url('./../img/about-bg1.jpg');
+  background-position: center 40%;
+  background-size: cover;
+  height: 30em;
+}
+.partner-wap1 {
+  background-image: url('./../img/partner-1.jpg') 
+}
+.partner-wap2 {
+  background-image: url('./../img/partner-2.jpg') 
+}
+.partner-wap3 {
+  background-image: url('./../img/partner-3.jpg') 
+}
+.partner-wap4 {
+  background-image: url('./../img/partner-4.jpg') 
+}
+.partner-wap1, .partner-wap2, .partner-wap3, .partner-wap4{
+  background-position: center center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 15em;
+}
+.partner-wap:hover {
+  opacity: 0.6;
+}
+.why-us {
+  background: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.705)), url('./../img/about-bg2.jpg');
+  background-size: cover;
+  background-position: center 35%;
+}
+.team-member-img {
+  transition-duration: 0.5s;
+}
+.team-member:hover .team-member-img {
+  padding: 10px !important;
+}
+
+/* Work */
+/* Singel Work */
+#work_single_banner {
+  background-image: url('./../img/banner-bg-02.jpg');
+  background-position: center center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.related-content {
+  border-radius: 20px;
+  cursor: pointer;
+}
+/* Pricing */
+.bg-pricing{
+  background-color: rgb(197, 163, 117);
+}
+.pricing-sofa{
+  width: 3em;
+}
+/* Contact */
+.bg-contactus{
+  background-image: url('./../img/contactus-bg1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+.contact-color-icon{
+  color: rgb(196, 156, 100);
+}
+.contact{
+  width: 85%;
+}
+#floatingtextarea {
+  height: 150px
+}
+/* Footer */
+footer a.text-light:hover {
+  color: #bfbfbf !important;
+  transition-duration: 0.15s;
+}
+
+.footer-bg{
+  background: linear-gradient(0deg, rgb(226, 226, 226) 0%, rgb(245 243 240) 100%);
+}
+
+.footer-tm-bg{
+  background: linear-gradient(0deg, rgb(197, 148, 84) 0%, rgb(196, 156, 100) 100%);
+}
+
+@media (max-width: 575.98px) {
+  .size-delivery{
+    width: 25%;
+  }
+}
